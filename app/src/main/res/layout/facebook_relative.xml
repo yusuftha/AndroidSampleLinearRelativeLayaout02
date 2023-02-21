@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4267B2"
+    android:gravity="center"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_ust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/f_logo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/text_logo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@+id/f_logo"
+            android:src="@drawable/facebooklogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_alt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_ust">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Email Or Phone"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:text="Email Or Phone"
+            android:textColor="@color/tintColor"
+            android:textSize="18sp"
+            app:backgroundTint="@color/white" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_email"
+            android:layout_marginBottom="10sp"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:hint="Email Or Phone"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:paddingLeft="10dp"
+            android:text="Password"
+            android:textColor="@color/tintColor"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64sp"
+            android:layout_below="@+id/et_password"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
